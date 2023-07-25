@@ -32,6 +32,7 @@
 		"@fontsource/manrope": "^4.5.13",
 		"@fontsource/outfit": "^4.5.11",
 		"@sveltejs/adapter-node": "^1.2.3",
+		"@sveltejs/adapter-vercel": "^3.0.2",
 		"dynamsoft-camera-enhancer": "^3.0.1",
 		"dynamsoft-javascript-barcode": "^9.3.0",
 		"html5-qrcode": "^2.3.8",
