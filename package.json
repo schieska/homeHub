@@ -1,0 +1,45 @@
+{
+	"name": "homedisplay",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch",
+		"lint": "prettier --plugin-search-dir . --check . && eslint .",
+		"format": "prettier --plugin-search-dir . --write .",
+		"host": "vite dev --host --port 3333"
+	},
+	"devDependencies": {
+		"@iconify/icons-tabler": "^1.2.74",
+		"@sveltejs/adapter-auto": "^1.0.0",
+		"@sveltejs/kit": "^1.0.0",
+		"eslint": "^8.28.0",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-plugin-svelte3": "^4.0.0",
+		"prettier": "^2.8.0",
+		"prettier-plugin-svelte": "^2.8.1",
+		"svelte": "^3.54.0",
+		"svelte-check": "^2.9.2",
+		"svelte-feather-icons": "^4.0.0",
+		"typescript": "^4.9.3",
+		"vite": "^4.0.0"
+	},
+	"type": "module",
+	"dependencies": {
+		"@fontsource/manrope": "^4.5.13",
+		"@fontsource/outfit": "^4.5.11",
+		"@sveltejs/adapter-node": "^1.2.3",
+		"dynamsoft-camera-enhancer": "^3.0.1",
+		"dynamsoft-javascript-barcode": "^9.3.0",
+		"html5-qrcode": "^2.3.8",
+		"iconify-icon": "^1.0.4",
+		"jshint": "^2.13.6",
+		"qrcode-scanner-svelte": "^1.0.0",
+		"socket.io": "^4.6.1",
+		"socket.io-client": "^4.6.1",
+		"svelte-feather": "github:novacbn/svelte-feather#0.1.0"
+	}
+}
