@@ -60,18 +60,18 @@ onDestroy(() => {
   }
 });
 </script>
-
+<!-- 
 {#if !connected}
 
 <div class="loader" transition:fade={{ delay: 600 }} > <LoadScreen /></div>
 
-{:else}
+{:else} -->
 
 <div class="content" transition:fade={{ delay: 0 }}>
 	<slot />
 </div>
 
-{/if}
+<!-- {/if} -->
 
 
 <style>

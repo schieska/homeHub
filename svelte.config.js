@@ -1,9 +1,13 @@
-import adapter from '@sveltejs/adapter-vercel';
+import adapter from '@sveltejs/adapter-node';
 
-export default {
-    kit: {
-        adapter: adapter({
-            // see the 'Deployment configuration' section below
-        })
-    }
+/** @type {import('@sveltejs/kit').Config} */
+const config = {
+	kit: {
+		adapter: adapter()
+	},
+	// server: {
+	// 	host: true
+	// }
 };
+
+export default config;
