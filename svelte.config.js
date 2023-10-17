@@ -1,13 +1,17 @@
-import adapter from '@sveltejs/adapter-node';
+import adapterNode from '@sveltejs/adapter-node';
+import adapterVercel from '@sveltejs/adapter-vercel';
 
-/** @type {import('@sveltejs/kit').Config} */
-const config = {
-	kit: {
-		adapter: adapter()
-	},
-	// server: {
-	// 	host: true
-	// }
+let adapter;
+
+if (process.env.DEPLOY_ENV === 'vercel') {
+    adapter = adapterVercel();
+} else {
+    adapter = adapterNode();
+}
+
+export default {
+    kit: {
+        adapter: adapter,
+        // ... other sveltekit options ...
+    }
 };
-
-export default config;
